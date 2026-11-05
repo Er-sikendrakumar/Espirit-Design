@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /.scraped_archive/
+
+Sitemap: https://espirittech.com/sitemap.xml

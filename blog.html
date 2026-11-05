@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Blog & Engineering Insights | Espirit Technologies</title>
+  <meta name="description" content="Explore software engineering insights, architecture deep dives, AI & ML trends, and offshore development best practices from Espirit Technologies.">
+  <meta name="keywords" content="software engineering blog, Laravel 12 features, Python AI ML trends, MERN vs JAMstack, offshore development guide, healthcare software architecture, .NET web development">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="canonical" href="https://espirittech.com/blog.html">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="blog">
+  <meta property="og:site_name" content="Espirit Technologies">
+  <meta property="og:url" content="https://espirittech.com/blog.html">
+  <meta property="og:title" content="Tech Blog & Engineering Insights | Espirit Technologies">
+  <meta property="og:description" content="Explore software engineering insights, architecture deep dives, AI & ML trends, and offshore development best practices from Espirit Technologies.">
+  <meta property="og:image" content="https://espirittech.com/espirit-logo.svg">
+  <meta property="og:locale" content="en_US">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@espirittech">
+  <meta name="twitter:url" content="https://espirittech.com/blog.html">
+  <meta name="twitter:title" content="Tech Blog & Engineering Insights | Espirit Technologies">
+  <meta name="twitter:description" content="Explore software engineering insights, architecture deep dives, AI & ML trends, and offshore development best practices from Espirit Technologies.">
+  <meta name="twitter:image" content="https://espirittech.com/espirit-logo.svg">
+
+  <!-- Schema.org Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "Espirit Technologies Engineering Insights",
+      "url": "https://espirittech.com/blog.html",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Espirit Technologies Pvt. Ltd",
+        "logo": "https://espirittech.com/espirit-logo.svg"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://espirittech.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://espirittech.com/blog.html"
+        }
+      ]
+    }
+  ]
+}
+  </script>
+  <link rel="icon" type="image/svg+xml" href="espirit-logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+  <!-- Announcement Bar -->
+  <aside class="announcement-bar">
+    <div class="container announcement-content">
+      <div class="announcement-left">
+        <span class="announcement-tag">Engineering Insights</span>
+        <span>⚡ Latest Articles on AI, Laravel 12, Python & Cloud Architecture</span>
+      </div>
+      <div class="announcement-right">
+        <a href="tel:+17323876362" class="announcement-link">
+          🇺🇸 US Direct: +1 732-387-6362
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Navbar -->
+  <header class="navbar-wrapper">
+    <div class="container nav-container">
+      <a href="index.html" class="nav-logo" aria-label="Espirit Technologies Home">
+        <img src="espirit-logo.svg" alt="Espirit Technologies" class="nav-logo-svg">
+      </a>
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="our-team.html" class="nav-link">Our Team</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="careers.html" class="nav-link">Careers</a>
+        <a href="blog.html" class="nav-link active">Blog</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="tel:+17323876362" class="phone-badge" title="Direct Line USA">
+          <span>🇺🇸</span>
+          <span>+1 732-387-6362</span>
+        </a>
+        <button id="theme-toggle-btn" class="theme-toggle" aria-label="Toggle Theme">
+          <span id="theme-icon">
+            <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </span>
+        </button>
+        <a href="get-quote.html" class="btn btn-primary btn-sm">
+          <span>Get Quote</span>
+        </a>
+        <button class="mobile-menu-btn" aria-label="Open Mobile Menu">
+          <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-nav-drawer">
+    <div>
+      <div class="d-flex align-items-center justify-content-between">
+        <img src="espirit-logo.svg" alt="Espirit Technologies" class="navbar-logo-img">
+        <button class="modal-close-btn mobile-drawer-close" aria-label="Close Mobile Menu">✕</button>
+      </div>
+      <div class="mobile-drawer-links">
+        <a href="index.html" class="mobile-drawer-link">Home</a>
+        <a href="about.html" class="mobile-drawer-link">About Us</a>
+        <a href="our-team.html" class="mobile-drawer-link">Our Team</a>
+        <a href="services.html" class="mobile-drawer-link">Services</a>
+        <a href="careers.html" class="mobile-drawer-link">Careers</a>
+        <a href="blog.html" class="mobile-drawer-link active">Blog</a>
+        <a href="contact.html" class="mobile-drawer-link">Contact Us</a>
+        <a href="get-quote.html" class="mobile-drawer-link">Get Quote</a>
+        <a href="privacy-policy.html" class="mobile-drawer-link">Privacy Policy</a>
+      </div>
+    </div>
+    <div>
+      <a href="tel:+17323876362" class="d-block mb-3 text-primary-light fw-semibold">
+        📞 +1 732-387-6362 (US Office)
+      </a>
+      <a href="get-quote.html" class="btn btn-primary w-100 text-center">
+        Request Consultation
+      </a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="section pt-5 pb-4">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="badge">Tech Thought Leadership & Analysis</span>
+        <h1>Engineering Insights & <span class="text-gradient">Architectural Trends</span></h1>
+        <p class="section-subtitle">
+          In-depth technical guides, offshore software engineering strategies, framework comparisons, and practical
+          insights curated by the engineering team at Espirit Technologies.
+        </p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="blog-filter-nav reveal">
+        <button class="blog-filter-btn active" data-filter="all">All Articles (12)</button>
+        <button class="blog-filter-btn" data-filter="ai">AI & ML (3)</button>
+        <button class="blog-filter-btn" data-filter="laravel">PHP & Laravel (3)</button>
+        <button class="blog-filter-btn" data-filter="cloud">Cloud & Architecture (3)</button>
+        <button class="blog-filter-btn" data-filter="enterprise">Enterprise Strategy (3)</button>
+      </div>
+
+      <!-- Articles Grid -->
+      <div class="blog-grid reveal">
+
+        <!-- Article 1: Software Dev Company USA -->
+        <article class="blog-card reveal" data-category="enterprise" data-blog-id="1">
+          <div class="blog-cover">
+            <span class="blog-badge">Enterprise IT</span>
+            <div class="blog-cover-visual">
+              <span class="blog-cover-icon">🇺🇸</span>
+              <span class="blog-cover-label">USA Delivery Hub</span>
+            </div>
+            <span class="blog-read-time">5 min read</span>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta-date">
+              <span>📅 Nov 2026</span>
+              <span>•</span>
+              <span>Verified Tech Guide</span>
+            </div>
+            <h3>Software Development Company in USA – Espirit Technologies</h3>
+            <p>
+              At Espirit Technologies, we believe software should work for you — not the other way around. As a leading software development company in the USA, we help businesses of all sizes bring their digital ideas to life with secure, scalable, and user-friendly solutions.
+            </p>
+            <div class="blog-footer">
+              <div class="blog-author">
+                <div class="blog-author-avatar">ET</div>
+                <span>By Solutions Team</span>
+              </div>
+              <a href="blog-details.html?id=1" class="blog-read-btn">Read Article →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 2: Consulting Strategy -->
+        <article class="blog-card reveal" data-category="enterprise" data-blog-id="2">
+          <div class="blog-cover">
+            <span class="blog-badge">Strategy & Advisory</span>
+            <div class="blog-cover-visual">
+              <span class="blog-cover-icon">💡</span>
+              <span class="blog-cover-label">Technology Advisory</span>
+            </div>
+            <span class="blog-read-time">6 min read</span>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta-date">
+              <span>📅 Nov 2026</span>
+              <span>•</span>
+              <span>Executive Briefing</span>
+            </div>
+            <h3>What Is Software Development Consulting & How Can It Help Your Business?</h3>
+            <p>
+              Bringing in tech professionals who can guide your company through difficult technical decisions, plan smart software strategies, and enable your team to create or improve software solutions is the essence of software development consulting.
+            </p>
+            <div class="blog-footer">
+              <div class="blog-author">
+                <div class="blog-author-avatar">SC</div>
+                <span>By Senior Architect</span>
+              </div>
+              <a href="blog-details.html?id=2" class="blog-read-btn">Read Article →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 3: Laravel 12 Guide -->
+        <article class="blog-card reveal" data-category="laravel" data-blog-id="3">
+          <div class="blog-cover">
+            <span class="blog-badge">PHP & Frameworks</span>
+            <div class="blog-cover-visual">
+              <span class="blog-cover-icon">🔺</span>
+              <span class="blog-cover-label">Laravel 12 Ecosystem</span>
+            </div>
+            <span class="blog-read-time">7 min read</span>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta-date">
+              <span>📅 Oct 2026</span>
+              <span>•</span>
+              <span>Developer Roadmap</span>
+            </div>
+            <h3>What’s New in Laravel 12 – Features, Updates & Upgrade Guide</h3>
+            <p>
+              Laravel has been revolutionary in the world of PHP development, always looking to provide improved performance, security, and developer ergonomics. Discover the newest features in Laravel 12 and how to seamlessly upgrade your applications.
+            </p>
+            <div class="blog-footer">
+              <div class="blog-author">
+                <div class="blog-author-avatar">JK</div>
+                <span>By Backend Pod</span>
+              </div>
+              <a href="blog-details.html?id=3" class="blog-read-btn">Read Article →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 4: Python AI & ML -->
+        <article class="blog-card reveal" data-category="ai" data-blog-id="4">
+          <div class="blog-cover">
+            <span class="blog-badge">AI & Machine Learning</span>
+            <div class="blog-cover-visual">
+              <span class="blog-cover-icon">🐍</span>
+              <span class="blog-cover-label">PyTorch & LLM Pipelines</span>
+            </div>
+            <span class="blog-read-time">8 min read</span>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta-date">
+              <span>📅 Oct 2026</span>
+              <span>•</span>
+              <span>AI Deep Dive</span>
+            </div>
+            <h3>Why Python AI & ML Services Are Vital for Modern Industries</h3>
+            <p>
+              In today’s rapidly evolving technological landscape, the importance of Python AI and machine learning services cannot be overstated. Learn how enterprise organizations harness PyTorch, TensorFlow, and custom LLMs to gain a competitive moat.
+            </p>
+            <div class="blog-footer">
+              <div class="blog-author">
+                <div class="blog-author-avatar">AI</div>
+                <span>By AI Research Pod</span>
+              </div>
+              <a href="blog-details.html?id=4" class="blog-read-btn">Read Article →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 5: Healthcare Software 2025 -->
+        <article class="blog-card reveal" data-category="cloud enterprise" data-blog-id="5">
+          <div class="blog-cover">
+            <span class="blog-badge">HealthTech</span>
+            <div class="blog-cover-visual">
+              <span class="blog-cover-icon">🏥</span>
+              <span class="blog-cover-label">HIPAA Security Standard</span>
+            </div>
+            <span class="blog-read-time">9 min read</span>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta-date">
+              <span>📅 Sep 2026</span>
+              <span>•</span>
+              <span>Healthcare Guide</span>
+            </div>
+            <h3>Custom Healthcare Software Development in 2025: The Ultimate Guide</h3>
+            <p>
+              The healthcare industry is rapidly evolving, with HIPAA-compliant custom solutions leading the charge in patient care innovation. Explore telemedicine pipelines, EHR/EMR interoperability, and stringent cloud security requirements.
+            </p>
+            <div class="blog-footer">
+              <div class="blog-author">
+                <div class="blog-author-avatar">HT</div>
+                <span>By HealthTech Lead</span>
+              </div>
+              <a href="blog-details.html?id=5" class="blog-read-btn">Read Article →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 6: Laravel vs Node.js -->
+        <article class="blog-card reveal" data-category="laravel cloud" data-blog-id="6">
+          <div class="blog-cover">
+            <span class="blog-badge">Tech Comparison</span>
+            <div class="blog-cover-visual">
+              <span class="blog-cover-icon">⚡</span>
+              <span class="blog-cover-label">Backend Benchmarks</span>
+            </div>
+            <span class="blog-read-time">6 min read</span>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta-date">
+              <span>📅 Sep 2026</span>
+              <span>•</span>
+              <span>Architecture Benchmark</span>
+            </div>
+            <h3>Laravel vs. Node.js: Which Is the Better Development Platform?</h3>
+            <p>
+              Are you in search of an effective web development technology? We analyze concurrency, execution speed, database ORM capabilities, and long-term maintainability between Laravel and Node.js for high-volume enterprise backends.
+            </p>
+            <div class="blog-footer">
+              <div class="blog-author">
+                <div class="blog-author-avatar">SA</div>
+                <span>By Core Architects</span>
+              </div>
+              <a href="blog-details.html?id=6" class="blog-read-btn">Read Article →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 7: MERN vs JAMstack -->
+        <article class="blog-card reveal" data-category="cloud" data-blog-id="7">
+          <div class="blog-cover">
+            <span class="blog-badge">Web Architecture</span>
+            <div class="blog-cover-visual">
+              <span class="blog-cover-icon">🌐</span>
+              <span class="blog-cover-label">Decoupled Systems</span>
+            </div>
+            <span class="blog-read-time">7 min read</span>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta-date">
+              <span>📅 Aug 2026</span>
+              <span>•</span>
+              <span>Web Standards</span>
+            </div>
+            <h3>MERN Stack vs JAMstack: Which Is the Best Choice for Web Development?</h3>
+            <p>
+              Choosing the right web architecture is crucial for building resilient, fast-loading applications. We break down the trade-offs between monolithic full-stack MERN builds and decouple-first serverless JAMstack architectures.
+            </p>
+            <div class="blog-footer">
+              <div class="blog-author">
+                <div class="blog-author-avatar">FE</div>
+                <span>By Frontend Pod</span>
+              </div>
+              <a href="blog-details.html?id=7" class="blog-read-btn">Read Article →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 8: .NET Web Development -->
+        <article class="blog-card reveal" data-category="enterprise cloud" data-blog-id="8">
+          <div class="blog-cover">
+            <span class="blog-badge">Microsoft Enterprise</span>
+            <div class="blog-cover-visual">
+              <span class="blog-cover-icon">🟣</span>
+              <span class="blog-cover-label">.NET 8 & C# Core</span>
+            </div>
+            <span class="blog-read-time">5 min read</span>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta-date">
+              <span>📅 Aug 2026</span>
+              <span>•</span>
+              <span>Enterprise Modernization</span>
+            </div>
+            <h3>Boost Your Business with .NET Web Development Services</h3>
+            <p>
+              .NET web development enables organizations to build robust, high-performance web applications backed by Microsoft's enterprise-grade ecosystem, C# typed safety, and cross-platform ASP.NET Core microservices.
+            </p>
+            <div class="blog-footer">
+              <div class="blog-author">
+                <div class="blog-author-avatar">MS</div>
+                <span>By .NET Engineering</span>
+              </div>
+              <a href="blog-details.html?id=8" class="blog-read-btn">Read Article →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 9: Find Right Laravel Agency -->
+        <article class="blog-card reveal" data-category="laravel enterprise" data-blog-id="9">
+          <div class="blog-cover">
+            <span class="blog-badge">Outsourcing Guide</span>
+            <div class="blog-cover-visual">
+              <span class="blog-cover-icon">🔍</span>
+              <span class="blog-cover-label">Offshore Vetting</span>
+            </div>
+            <span class="blog-read-time">6 min read</span>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta-date">
+              <span>📅 Jul 2026</span>
+              <span>•</span>
+              <span>Hiring Framework</span>
+            </div>
+            <h3>How to Find the Right Laravel Web Application Development Company</h3>
+            <p>
+              Discover the critical vetting criteria for partnering with an offshore Laravel agency: reviewing clean code architectures, Eloquent optimization, automated testing suites, and proven production deployments.
+            </p>
+            <div class="blog-footer">
+              <div class="blog-author">
+                <div class="blog-author-avatar">DM</div>
+                <span>By Talent Partners</span>
+              </div>
+              <a href="blog-details.html?id=9" class="blog-read-btn">Read Article →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 10: Programming Languages for AI -->
+        <article class="blog-card reveal" data-category="ai cloud" data-blog-id="10">
+          <div class="blog-cover">
+            <span class="blog-badge">Language Trends</span>
+            <div class="blog-cover-visual">
+              <span class="blog-cover-icon">🤖</span>
+              <span class="blog-cover-label">AI Framework Matrix</span>
+            </div>
+            <span class="blog-read-time">7 min read</span>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta-date">
+              <span>📅 Jul 2026</span>
+              <span>•</span>
+              <span>Industry Analysis</span>
+            </div>
+            <h3>Selecting the Best Programming Language: AI, Python, and 2026 Trends</h3>
+            <p>
+              With hundreds of programming languages available, choosing the right stack for machine learning, distributed microservices, and mobile apps is critical. We evaluate Python, Rust, Go, TypeScript, and Java across key velocity metrics.
+            </p>
+            <div class="blog-footer">
+              <div class="blog-author">
+                <div class="blog-author-avatar">ET</div>
+                <span>By Research Pod</span>
+              </div>
+              <a href="blog-details.html?id=10" class="blog-read-btn">Read Article →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 11: WordPress Development in USA -->
+        <article class="blog-card reveal" data-category="enterprise" data-blog-id="11">
+          <div class="blog-cover">
+            <span class="blog-badge">Enterprise CMS</span>
+            <div class="blog-cover-visual">
+              <span class="blog-cover-icon">📝</span>
+              <span class="blog-cover-label">Headless & Scalable</span>
+            </div>
+            <span class="blog-read-time">5 min read</span>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta-date">
+              <span>📅 Jun 2026</span>
+              <span>•</span>
+              <span>CMS Optimization</span>
+            </div>
+            <h3>Benefits of Opting for WordPress Development Services in the USA</h3>
+            <p>
+              Powering over 40% of the web, WordPress is increasingly deployed as a decoupled, headless CMS backed by Next.js and secure REST/GraphQL endpoints, giving enterprise marketing teams unmatched agility.
+            </p>
+            <div class="blog-footer">
+              <div class="blog-author">
+                <div class="blog-author-avatar">WP</div>
+                <span>By Web Solutions</span>
+              </div>
+              <a href="blog-details.html?id=11" class="blog-read-btn">Read Article →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 12: Mobile & App Services -->
+        <article class="blog-card reveal" data-category="cloud enterprise" data-blog-id="12">
+          <div class="blog-cover">
+            <span class="blog-badge">Mobile Engineering</span>
+            <div class="blog-cover-visual">
+              <span class="blog-cover-icon">📱</span>
+              <span class="blog-cover-label">Cross-Platform Growth</span>
+            </div>
+            <span class="blog-read-time">6 min read</span>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta-date">
+              <span>📅 Jun 2026</span>
+              <span>•</span>
+              <span>Growth Blueprint</span>
+            </div>
+            <h3>How Application Development Services Help Grow Your Business</h3>
+            <p>
+              In today's digital-first economy, purpose-built mobile and web applications streamline internal workflows, retain high-LTV customers, and unlock direct revenue streams across North America and Europe.
+            </p>
+            <div class="blog-footer">
+              <div class="blog-author">
+                <div class="blog-author-avatar">APP</div>
+                <span>By Product Squad</span>
+              </div>
+              <a href="blog-details.html?id=12" class="blog-read-btn">Read Article →</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Box -->
+  <section class="section pt-3 pb-5">
+    <div class="container">
+      <div class="cta-banner reveal">
+        <span class="badge">Have a Custom Technical Requirement?</span>
+        <h2>Let's Transform Your Vision Into <span class="text-gradient">Production Code</span></h2>
+        <p>
+          Connect directly with our solutions architects in the US and India for an architectural review, agile squad scoping, and transparent milestone estimates.
+        </p>
+        <div class="cta-actions">
+          <a href="get-quote.html" class="btn btn-primary btn-lg">
+            <span>Get Project Estimate</span>
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="tel:+17323876362" class="btn btn-secondary btn-lg">
+            <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+            <span>Call US: +1 732-387-6362</span>
+          </a>
+        </div>
+        <div class="cta-guarantee">
+          <span class="cta-guarantee-item">
+            <svg width="16" height="16" fill="none" stroke="#0055ff" stroke-width="2" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+            4-Hour Response SLA
+          </span>
+          <span class="cta-guarantee-separator">•</span>
+          <span class="cta-guarantee-item">
+            <svg width="16" height="16" fill="none" stroke="#10b981" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            100% IP & Mutual NDA Protected
+          </span>
+          <span class="cta-guarantee-separator">•</span>
+          <span class="cta-guarantee-item">
+            <svg width="16" height="16" fill="none" stroke="#f59e0b" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+            2-Week Risk-Free Trial Sprint
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       MODAL: INTERACTIVE BLOG ARTICLE READER
+       ========================================================================== -->
+  <div class="modal-overlay" id="blog-reader-modal" role="dialog" aria-modal="true" aria-labelledby="modal-blog-title">
+    <div class="modal-box modal-box-lg">
+      <button class="modal-close-btn" aria-label="Close Modal">✕</button>
+      <div class="badge mb-2" id="modal-blog-badge">ENGINEERING ARTICLE</div>
+      <h3 id="modal-blog-title" class="modal-title-custom">Article Title</h3>
+      <div id="modal-blog-meta" class="d-flex gap-3 mb-3 text-muted-custom small"></div>
+
+      <div class="modal-blog-content" id="modal-blog-body">
+        Article content...
+      </div>
+
+      <div class="d-flex gap-3 flex-wrap">
+        <a href="get-quote.html" class="btn btn-primary flex-grow-1">
+          Schedule Architecture Call On This Topic
+        </a>
+        <button class="btn btn-secondary modal-close-btn modal-close-btn-text">
+          Close Article
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       ENTERPRISE FOOTER (Unified 4-Column Layout)
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Brand Col -->
+        <div class="footer-brand">
+          <img src="espirit-logo.svg" alt="Espirit Technologies" class="footer-logo-img">
+          <p>
+            Espirit Technologies Pvt. Ltd has been extending world-class offshore IT and custom software development
+            services since 2008. Powering digital innovation for high-growth enterprises worldwide.
+          </p>
+          <div class="social-links">
+            <a href="https://in.linkedin.com/company/espirit-technologies-private-limited" target="_blank"
+              rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/EspiritTechnologies/" target="_blank" rel="noopener noreferrer"
+              class="social-btn" aria-label="Facebook">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+              </svg>
+            </a>
+            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="social-btn"
+              aria-label="Twitter">
+              <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                <path
+                  d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2: Services -->
+        <div class="footer-col">
+          <h4>Engineering Services</h4>
+          <ul class="footer-links-list">
+            <li><a href="services.html#custom-software">Custom Software Engineering</a></li>
+            <li><a href="services.html#web-apps">Modern Web Platforms (Next/React)</a></li>
+            <li><a href="services.html#mobile-apps">Mobile Apps (Flutter & Native)</a></li>
+            <li><a href="services.html#ai-data">AI & Machine Learning Pipelines</a></li>
+            <li><a href="services.html#ai-data">Data Labeling & Annotation</a></li>
+            <li><a href="services.html#it-staffing">Dedicated Offshore Squads</a></li>
+            <li><a href="services.html#qa-testing">QA Automation & Security</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Technologies -->
+        <div class="footer-col">
+          <h4>Technologies</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html#technologies">React.js & Next.js</a></li>
+            <li><a href="index.html#technologies">Python & AI Frameworks</a></li>
+            <li><a href="index.html#technologies">Node.js & TypeScript</a></li>
+            <li><a href="index.html#technologies">Flutter & React Native</a></li>
+            <li><a href="index.html#technologies">PHP & Laravel Framework</a></li>
+            <li><a href="index.html#technologies">.NET Core & C#</a></li>
+            <li><a href="index.html#technologies">AWS, Azure & Kubernetes</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Corporate & HQ -->
+        <div class="footer-col">
+          <h4>Global Headquarters</h4>
+          <p class="footer-hq-text">
+            <strong>ESPIRIT Technologies Pvt Ltd.</strong><br>
+            #5-4-736, Nampally Station Road, Abids, Hyderabad 500001, Telangana, India
+          </p>
+          <p class="footer-hq-text">
+            <strong>USA Regional Office:</strong><br>
+            Phone: <a href="tel:+17323876362" class="text-cyan">+1 732-387-6362</a><br>
+            Email: <a href="mailto:info@espirittech.com" class="text-cyan">info@espirittech.com</a>
+          </p>
+          <div class="badge badge-iso">
+            ISO 9001:2015 CERTIFIED IT COMPANY
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2008 - 2026 Espirit Technologies Pvt Ltd. All Rights Reserved.
+        </div>
+        <div class="d-flex gap-3 flex-wrap">
+          <a href="about.html">About Us</a>
+          <a href="our-team.html">Our Team</a>
+          <a href="services.html">Services</a>
+          <a href="careers.html">Careers</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Action Quick Contact Pill -->
+  <div class="floating-contact-pill" onclick="window.location.href='get-quote.html'" title="Request Quick Quote">
+    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+    </svg>
+    <span>Free Project Estimate</span>
+  </div>
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

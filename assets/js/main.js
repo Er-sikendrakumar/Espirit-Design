@@ -161,7 +161,9 @@ function initCounters() {
    ========================================================================== */
 function initTechFilter() {
   const filterBtns = document.querySelectorAll('.tech-filter-btn');
-  const techItems = document.querySelectorAll('.tech-item');
+  const cards = document.querySelectorAll('.tech-suite-card, .tech-item');
+
+  if (!filterBtns.length || !cards.length) return;
 
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -170,13 +172,12 @@ function initTechFilter() {
 
       const filter = btn.getAttribute('data-filter');
 
-      techItems.forEach(item => {
-        const cat = item.getAttribute('data-category');
+      cards.forEach(card => {
+        const cat = card.getAttribute('data-category') || '';
         if (filter === 'all' || cat.includes(filter)) {
-          item.style.display = 'flex';
-          item.style.animation = 'fadeIn 0.4s ease forwards';
+          card.classList.remove('d-none');
         } else {
-          item.style.display = 'none';
+          card.classList.add('d-none');
         }
       });
     });
